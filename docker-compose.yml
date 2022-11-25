@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  front:
+    build:
+      context: ./
+    container_name: front
+    environment:
+      - DYNAMIC_ENV
+      - BASE_API_URL
+    ports:
+      - '3001:80'

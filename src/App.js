@@ -7,7 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <div>Loaded from dynamic environment variable in container</div>
+          <div>Dynamic environment variable: "{window._env_.DYNAMIC_ENV}"</div>
+          <div>Example of api base url: "{window._env_.BASE_API_URL}"</div>
         </p>
         <a
           className="App-link"
