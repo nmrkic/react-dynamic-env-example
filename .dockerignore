@@ -4,3 +4,4 @@ node_modules
 .gitignore
 build
 Dockerfile
+public/dynamic-env.js

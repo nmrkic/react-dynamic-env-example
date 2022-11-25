@@ -33,7 +33,6 @@ if [ -f "./index.html" ]; then
 
   echo "}" >> ./dynamic-env_${ENV_VERSION}.js
   rm .env
-
   sed -i "s/dynamic-env.js/$(echo dynamic-env_${ENV_VERSION}.js)/" index.html
   mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index-${ENV_VERSION}.html
   sed -i "s/index.html/$(ls | grep index)/" /etc/nginx/conf.d/default.conf
